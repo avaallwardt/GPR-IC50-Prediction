@@ -1,2 +1,2 @@
-# Sequence-Kernel Prediction of Antibody VRC01 Neutralization of HIV-1
+# Sequence-Kernel Prediction of Antibody VRC01 Neutralization of HIV-1 Using Gaussian Process Regression (GPR)
 Exploratory machine-learning work conducted as an ML Researcher at the Broad Institute of MIT and Harvard. I developed a custom sequence-similarity kernel and Gaussian process regression–based model to predict VRC01 IC50 values from aligned HIV Env sequences, estimate predictive uncertainty, and classify undetectable (`UD`) IC50 measurements.
