@@ -2,10 +2,12 @@
 
 Exploratory machine-learning work I did as an ML Researcher at the Broad Institute of MIT and Harvard.
 
-VRC01 is a broadly neutralizing antibody against HIV-1. Its potency against a given virus is measured as an IC50 (lower means more potent), and some viruses cannot be neutralized at all, which is recorded as undetectable (`UD`). This project predicts, from a virus's aligned Env protein sequence alone:
+VRC01 is a broadly neutralizing antibody against HIV-1. Its potency against an HIV-1 viral variant is measured as an IC50 (lower IC50 means more potent). Some viral variants are unable to be neutralized at all, which is recorded as undetectable (`UD`). This project predicts:
 
 1. whether VRC01 will neutralize it at all (UD vs. not UD), and
 2. if so, its log IC50, along with an uncertainty estimate for each prediction.
+
+from a virus's aligned Env protein sequence.
 
 ## Data
 
