@@ -69,7 +69,6 @@ Without class balancing, the classifier labels almost everything as neutralizabl
 - **Random split.** Closely related viruses can appear in both training and test sets, which likely makes these scores optimistic. About 20 sequences in the file are exact duplicates. Deduplicating and splitting by clade or sequence-similarity cluster would give a harder, more realistic test.
 - **Fixed hyperparameters.** The noise level and kernel scale were set by hand rather than fit by maximum likelihood.
 - **Simple kernel.** Identity matching treats every substitution as equally different. Planned alternatives: weighting substitutions by amino-acid similarity (e.g., BLOSUM), or using cosine similarity of ESM-2 embeddings.
-- **No external baseline yet.** Comparing against a ridge regression or a small neural network on the same split would show how much the GP adds.
 - **Escape mutations.** Two sequences can be highly similar overall yet differ at a single residue that lets the virus escape VRC01. Combining the kernel with known escape positions is a natural extension.
 
 ## Repository structure
